@@ -15,9 +15,10 @@ var objArray = [];
 
 for(var i=1; i<newArray.length; i++){
 	var obj = {};
-	obj[newArray[0][0]] = newArray[i][0];
-	obj[newArray[0][1]] = newArray[i][1];
-	obj[newArray[0][2]] = newArray[i][2];
+
+	for(var j=0; j<newArray[i].length; j++){
+		obj[newArray[0][j]] = newArray[i][j];
+	}
 
 	objArray.push(obj);
 }
